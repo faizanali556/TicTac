@@ -1,10 +1,13 @@
 .container {
   text-align: center;
+  margin: auto;
 }
 .title {
   margin-top: 50px;
   color: #fefe;
-  font-size: 60px;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
 }
 .title span {
   color: #26ffcb;
@@ -20,11 +23,12 @@
   background-color: #1f3540;
   font-size: 26px;
   color: #26ffcb;
-  margin-top: 25px;
   margin-bottom: 25px;
+  margin-left: 20px;
 }
 .boxex {
   display: flex;
+  justify-content: center;
   height: 180px;
   width: 180px;
   background-color: #1f3540;
@@ -36,8 +40,147 @@
   height: 600px;
   width: 564px;
   display: flex;
+  justify-items: center;
   margin: auto;
 }
 .boxex img {
   margin: 50px 50px;
+}
+.title img {
+  margin-top: 5px;
+  padding-left: 10px;
+  height: 50px;
+  width: 50px;
+}
+.cross {
+  width: 150px;
+  height: 50px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 50px;
+  background-color: #1f3540;
+  font-size: 26px;
+  color: #26ffcb;
+  margin: 0px 20px 25px 30px;
+}
+.bottom {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 40%;
+  margin: auto;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .board {
+    justify-content: center;
+    height: 600px;
+    width: 600px;
+  }
+  .bottom {
+    width: 50%;
+    margin: 0px 0px auto 150px;
+  }
+  .cross {
+    font-size: 20px;
+    width: 100px;
+    padding: 10px 0px 10px 0px;
+  }
+  .reset {
+    font-size: 20px;
+  }
+}
+@media (min-width: 637px) and (max-width: 767px) {
+  .container {
+    width: 100%;
+    margin: auto;
+  }
+  .board {
+    height: 400px;
+    width: 400px;
+    margin: auto;
+    padding: 0px;
+  }
+  .boxex {
+    display: flex;
+    height: 140px;
+    width: 140px;
+  }
+  .bottom {
+    width: 60%;
+    margin: 50px 0px auto 140px;
+  }
+  .cross {
+    font-size: 20px;
+    width: 200px;
+    padding-top: 10px;
+  }
+  .reset {
+    font-size: 20px;
+    width: 200px;
+  }
+}
+@media (max-width: 636px) and (min-width: 363px) {
+  .container {
+    margin: auto;
+  }
+  .board {
+    height: 300px;
+    width: 300px;
+    justify-content: center;
+  }
+  .boxex {
+    display: flex;
+    height: 120px;
+    width: 120px;
+  }
+  .boxex img {
+    margin: 30px 30px;
+  }
+  .bottom {
+    width: 100%;
+    margin-top: 100px;
+    flex-direction: column;
+  }
+  .cross {
+    font-size: 20px;
+    width: 200px;
+    padding: 10px 10px 10px 10px;
+  }
+  .reset {
+    font-size: 20px;
+    width: 200px;
+  }
+}
+@media (max-width: 362px) {
+  .container {
+    margin: auto;
+  }
+  .board {
+    height: 300px;
+    width: 200px;
+    justify-content: center;
+  }
+  .boxex img {
+    margin: 20px 20px;
+  }
+  .boxex {
+    display: flex;
+    height: 100px;
+    width: 80px;
+  }
+  .bottom {
+    width: 100%;
+    flex-direction: column;
+    margin: 40px auto 0px auto;
+  }
+  .cross {
+    font-size: 20px;
+    width: 200px;
+    padding: 10px 10px 10px 10px;
+  }
+  .reset {
+    font-size: 20px;
+    width: 200px;
+  }
 }
